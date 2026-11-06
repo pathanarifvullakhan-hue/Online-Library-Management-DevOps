@@ -6,11 +6,17 @@
   "scripts": {
     "start": "node server.js",
     "dev": "node --watch server.js",
-    "test": "node --test"
+    "test": "node --test",
+    "test:selenium": "node tests/selenium.test.js"
   },
-  "engines": { "node": ">=20" },
+  "engines": {
+    "node": ">=20"
+  },
   "dependencies": {
     "express": "^4.21.2",
     "mysql2": "^3.14.1"
+  },
+  "devDependencies": {
+    "selenium-webdriver": "^4.52.0"
   }
 }
